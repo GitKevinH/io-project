@@ -114,7 +114,7 @@ public class Main {
             e.printStackTrace();
         }
     }
-
+    //method to display names (helps user keep track of whats in the current directory)
     public static void getNames(String filePath){
         try (DirectoryStream<Path> directoryStream = Files.newDirectoryStream(Paths.get(filePath))) {
             System.out.println("Files in directory: ");
@@ -224,6 +224,7 @@ public class Main {
 
     }
 
+    //Method to create dir
     public static void createDir(Path directory){
         System.out.println("Enter the name of the directory you want to create.");
 
@@ -268,6 +269,7 @@ public class Main {
         }
     }
 
+    //Method to check if directory exists
     public static boolean checkDir(String directory) {
         Path path = Paths.get(directory);
 
@@ -280,6 +282,7 @@ public class Main {
         }
     }
 
+    //Method to check if file exists
     public static boolean checkFile(String fileName) {
         Path path = Paths.get(fileName);
 
